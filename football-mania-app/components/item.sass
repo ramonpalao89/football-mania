@@ -1,0 +1,82 @@
+.item
+    // width: 95%
+    font-size: 14px
+    font-family: Arial, Helvetica, sans-serif
+    font-weight: 100
+    // min-width: 200px
+    position: relative
+    border: 1px solid #cccccc
+    padding: 10px
+    background-color: #ffffff
+    cursor: pointer
+
+    &__favBtn
+        height: 40px
+        width: 40px
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        right: 10px
+        top: 10px
+        font-size: 24px
+        cursor: pointer
+        &.active
+            color: red
+
+    .item__media
+        // background-image: url('../images/fake-img_smiley.png')
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        height: 200px
+    
+    .item__details
+        padding: 5px
+        text-align: center
+
+        & *:not(:first-child)
+            margin-top: 5px
+
+        .item__notAvailable
+            color: #ff6666
+            display: none
+
+            &.item__notAvailable-visible
+                display: block
+        
+        .item__subDescription-secondary,
+        .item__colors-secondary,
+        .item__oldPrice
+            color: #999
+        
+        .item__oldPrice
+            text-decoration: line-through
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 768px)
+    .item
+        // width: 45%
+
+        // &:not(:nth-child(even))
+        //     margin-right: 2%
+
+        // &:not(:first-child),
+        // &:not(:nth-child(2))
+        //     margin-top: 20px
+    
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)
+    .item
+        // width: 30%
+
+        // &:not(:nth-child(3))
+        //     margin-right: 1.25%
+        
+        // &:not(:first-child),
+        // &:not(:nth-child(2)),
+        // &:not(:nth-child(3))
+        //     margin-top: 50px

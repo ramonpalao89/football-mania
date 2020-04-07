@@ -1,0 +1,36 @@
+@import item
+
+.search__description
+    padding: 30px
+    display: flex
+    justify-content: space-between
+    background-color: #ffffff
+    
+    .search__query
+        font-size: 24px
+        cursor: pointer
+
+.search__results
+    // display: flex
+    // flex-wrap: wrap
+    display: grid
+    grid-template-columns: 100%
+    width: 100%
+    padding: 10px
+    box-sizing: border-box
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 768px)
+    .search__results
+        display: grid
+        grid-template-columns: auto auto
+        grid-gap: 30px
+    
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)
+    .search__results
+        display: grid
+        grid-template-columns: auto auto auto
+        grid-gap: 30px
